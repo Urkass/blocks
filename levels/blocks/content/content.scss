@@ -1,0 +1,11 @@
+.content
+{
+    min-height: calc(100vh - 22px - 163px - 38px - 180px);
+    min-height: -webkit-calc(100vh - 22px - 163px - 38px - 180px);
+    min-height: -moz-calc(100vh - 22px - 163px - 38px - 180px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: $BI_color_background;
+
+}
