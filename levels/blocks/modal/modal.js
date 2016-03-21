@@ -1,4 +1,3 @@
-
 _button = $('#button');
 _modal = $('.modal');
 _modalError = $('.modal_type_error')[0];

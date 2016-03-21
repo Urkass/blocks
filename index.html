@@ -9,20 +9,31 @@
     <link rel="stylesheet" href="/dist/style.css">
 </head>
 <body>
-    <header class="header">
-    
-    </header>    <div class="menu">
-        <ul class="menu-ul">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="slider"></li>
-        </ul>
-    </div>    <div class="content section">
-    </div>    <footer class="section footer">
-    
-    </footer>    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <div id="button" style="background-color: black; width: 20px; height: 20px;"></div>
+    <div class="modal modal_display_none modal_type_order">
+        <div class="modal__content">
+            <span class="modal__close">x</span>
+            <h2 class="modal__header">Заполните заявку, и мы свяжемся с Вами в ближайшее время</h2>
+            <form class="form modal__form">
+                <input class="form__input" name="name" type="text" placeholder="&#x418;&#x43C;&#x44F;">
+                <input class="form__input" name="phone" type="tel" placeholder="&#x422;&#x435;&#x43B;&#x435;&#x444;&#x43E;&#x43D;">
+                <input class="form__input form__input_display_none" name="contentId" type="text">
+                <button class="form__submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal_display_none modal_type_error">
+        <div class="modal__content">
+            <span class="modal__close">x</span>
+            <h2 class="modal__header">Неполадки с сервером, позвоните нам по телефону!</h2>
+        </div>
+    </div>
+    <div class="modal modal_display_none modal_type_success">
+        <div class="modal__content">
+            <span class="modal__close">x</span>
+            <h2 class="modal__header">Спасибо за отправленную заявку! Мы свяжемся с Вами в ближайшее время!</h2>
+        </div>
+    </div>    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/dist/app.js"></script>
 </body>
 </html>
