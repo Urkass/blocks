@@ -1,10 +1,15 @@
 .modal__close {
-  color: #aaa;
+  //background-image: url(modal__close.svg);
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: contain;
+  width: 30px;
+  height: 30px;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  &:hover,&:focus{
-    color: black;
+  &:hover{
+    fill: orange;
     text-decoration: none;
     cursor: pointer;
   }
