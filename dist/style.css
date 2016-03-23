@@ -1281,6 +1281,16 @@
   box-sizing: border-box;
 }
 
+.content {
+  min-height: calc(100vh - 22px - 163px - 38px - 180px);
+  min-height: -webkit-calc(100vh - 22px - 163px - 38px - 180px);
+  min-height: -moz-calc(100vh - 22px - 163px - 38px - 180px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -1290,14 +1300,12 @@ body {
   background-image: linear-gradient(left, #2ba7b1, #bad0b8);
 }
 
-.content {
-  min-height: calc(100vh - 22px - 163px - 38px - 180px);
-  min-height: -webkit-calc(100vh - 22px - 163px - 38px - 180px);
-  min-height: -moz-calc(100vh - 22px - 163px - 38px - 180px);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  overflow: hidden;
-  background-color: #f0f0f0;
+.menu {
+  background-color: #ffb01d;
+  height: 41px;
+  z-index: 1000;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .modal {
@@ -1338,6 +1346,11 @@ body {
     padding-left: 2vw;
     padding-right: 2vw;
   }
+}
+
+.menu__stickyalias {
+  display: none;
+  height: 44px;
 }
 
 .form__input {
@@ -1446,6 +1459,31 @@ body {
   display: none;
 }
 
+.navigation__a {
+  background: transparent;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.navigation__li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.navigation__logo {
+  height: 20px;
+  float: left;
+  margin-top: 10px;
+  display: none;
+}
+
+.navigation__ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
 .form__input_display_none {
   display: none;
 }
@@ -1458,4 +1496,36 @@ body {
 .form__submit_state_disabled:hover {
   cursor: default;
   background: grey;
+}
+
+.navigation__a_type_main {
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  color: white;
+  display: block;
+  padding: 10px 25px;
+  font-family: SegoeUILight, sans-serif;
+}
+
+.navigation__a_type_main:hover {
+  background-color: #d99414;
+}
+
+.navigation__a_type_main:active {
+  background-color: #d99414;
+}
+
+.navigation__li_type_main {
+  float: left;
+  width: auto;
+}
+
+.navigation__ul_type_main {
+  list-style: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .navigation__ul_type_main {
+    display: none;
+  }
 }

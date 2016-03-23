@@ -1,0 +1,15 @@
+.navigation__a_type_main
+{
+  transition: all .25s ease;
+  color: $white;
+  display: block;
+  padding: 10px 25px;
+  font-family: SegoeUILight, sans-serif;
+}
+.navigation__a_type_main:hover{
+  background-color: $orange-bold;
+}
+.navigation__a_type_main:active{
+  background-color: $orange-bold;
+}
+
