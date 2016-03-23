@@ -1,0 +1,9 @@
+.form__submit_state_disabled
+{
+  cursor: default;
+  background: grey;
+  &:hover {
+    cursor: default;
+    background: grey;
+  }
+}

@@ -1,5 +1,6 @@
 .modal
 {
+  text-align: center;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -8,5 +9,5 @@
   height: 100%;
   overflow: auto;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.7);
 }
