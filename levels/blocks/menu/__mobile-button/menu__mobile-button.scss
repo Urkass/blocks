@@ -1,3 +1,16 @@
 .menu__mobile-button
 {
+  display: none !important;
+  float: right;
+  padding: calc((#{$menu-height} - 24px)/2) !important;
+  //padding-bottom: calc((#{$menu-height} - 28px)/2) !important;
+  @include menu-mobile{
+    display: block !important;
+  }
+}
+.hamburger-inner{
+  background-color: $white !important;
+  &:before,&:after{
+    background-color: $white !important;
+  }
 }

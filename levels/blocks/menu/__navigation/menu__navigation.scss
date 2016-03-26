@@ -1,0 +1,11 @@
+.menu__navigation
+{
+  height: 100%;
+  //border: 1px solid black;
+  display: inline-block;
+  //transition: height 0.4s;
+  @include menu-mobile{
+    width: 100%;
+    padding-bottom: 5px;
+  }
+}

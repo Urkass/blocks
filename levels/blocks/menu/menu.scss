@@ -1,7 +1,9 @@
 .menu
 {
-    background-color: $orange-light;
-    height: 41px;
-    z-index: 1000;
-    transition: all 1s linear;
+    background-color: $menu-color;
+    height: $menu-height;
+    z-index: 100;
+    max-height: 246px;
+    overflow: hidden;
+    //transition: all 1s linear;
 }

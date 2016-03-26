@@ -18,9 +18,11 @@
     @content;
   }
 }
-
-
-
+@mixin menu-mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
 
 $white: white;
 $orange-light: #ffb01d;
@@ -54,6 +56,10 @@ $BI_color_background: #f0f0f0;
 $BI_color_main: #385582;
 
 $menu_color: $BI_color_main;
+
+//menu
+$menu-height: 42px;
+$menu-color: $orange-light;
 
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)

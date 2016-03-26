@@ -2,4 +2,7 @@
 {
   float: left;
   width: auto;
+  @include menu-mobile{
+    float: none;
+  }
 }

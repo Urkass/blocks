@@ -1,3 +1,15 @@
 .menu__logo
 {
+  position: relative;
+  z-index: 101;
+  //padding: 10px;
+  height: 100%;
+  width: $menu-height;
+  //float: left;
+  display: inline-block;
+  background-image: url(menu__logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }

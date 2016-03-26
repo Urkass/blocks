@@ -1,24 +1,36 @@
 
+var $hamburger = $(".hamburger");
+var $menu = $('.menu');
+var $navigation = $('.menu__navigation');
+$hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    $menu.toggleClass("menu_state_opened");
+});
+
 $(function(){
     // Check the initial Poistion of the Sticky Header
-    var menu = $('.menu');
+
+
     //menu.slicknav();
     var alias = $('.menu__stickyalias');
     var logo =$('.navigation__logo');
-    var stickyHeaderTop = menu.offset().top;
+    var stickyHeaderTop = $menu.offset().top;
 
     $(window).scroll(function(){
         if( $(window).scrollTop() > stickyHeaderTop ) {
-            menu.css({position: 'fixed', top: '0px', 'box-shadow': '0 10px 10px -10px black'});
+            $menu.removeClass('.menu_place_normal');
+            $menu.addClass('menu_place_sticked');
             alias.css('display', 'block');
-            logo.show();
+            //logo.show();
         } else {
-            menu.css({position: 'static', top: '0px', 'box-shadow': 'none'});
+            $menu.addClass('.menu_place_normal');
+            $menu.removeClass('menu_place_sticked');
             alias.css('display', 'none');
-            logo.hide();
+            //logo.hide();
         }
     });
 });
+
 
 
 var _modal = $('.modal');

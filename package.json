@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "font-awesome": "^4.5.0",
+    "hamburgers": "^0.3.0",
     "jquery": "^2.2.0"
   },
   "devDependencies": {
